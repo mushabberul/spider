@@ -21,6 +21,8 @@
 
 <link rel="stylesheet" href="{{ asset('admin') }}/vendor/libs/apex-charts/apex-charts.css" />
 
+<!-- Main CSS -->
+<link rel="stylesheet" href="{{ asset('admin/css/main.css') }}" />
 <!-- Page CSS -->
 
 <!-- Helpers -->

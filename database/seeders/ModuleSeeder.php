@@ -2,8 +2,10 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\Module;
+use Illuminate\Support\Str;
 use Illuminate\Database\Seeder;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 class ModuleSeeder extends Seeder
 {
@@ -12,6 +14,18 @@ class ModuleSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        $modules = [
+            'Dashboard Access',
+            'User Management',
+            'Role Management',
+            'Permission Management',
+        ];
+
+        foreach ($modules as $module) {
+            Module::updateOrCreate([
+                'module_name' => $module,
+                'module_slug' => Str::slug($module)
+            ]);
+        }
     }
 }

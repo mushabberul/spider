@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('permission_name');
             $table->string('permission_slug');
+            $table->foreignId('module_id')->constrained('modules');
             $table->timestamps();
         });
     }

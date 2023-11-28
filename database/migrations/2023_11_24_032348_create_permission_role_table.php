@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('permission_role', function (Blueprint $table) {
             $table->id();
+            $table->string('permission_id');
+            $table->string('role_id');
             $table->timestamps();
         });
     }

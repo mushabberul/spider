@@ -68,13 +68,18 @@
         <li class="menu-item">
             <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons bx bx-layout"></i>
-                <div data-i18n="Layouts">Layouts</div>
+                <div data-i18n="Layouts">Modules</div>
             </a>
 
             <ul class="menu-sub">
                 <li class="menu-item">
-                    <a href="layouts-without-menu.html" class="menu-link">
-                        <div data-i18n="Without menu">Without menu</div>
+                    <a href="{{ route('module.index') }}" class="menu-link">
+                        <div data-i18n="Without menu">List</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="{{ route('module.create') }}" class="menu-link">
+                        <div data-i18n="Without menu">Create</div>
                     </a>
                 </li>
 
