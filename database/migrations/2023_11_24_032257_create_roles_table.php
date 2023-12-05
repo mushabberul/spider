@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('role_name');
             $table->string('role_slug');
-            $table->boolean('is_deletable');
+            $table->boolean('is_deletable')->default(false);
             $table->timestamps();
         });
     }

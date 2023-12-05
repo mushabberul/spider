@@ -13,6 +13,7 @@
     <meta name="description" content="" />
 
     @include('admin.inc.style')
+    @stack('css')
 </head>
 
 <body>
@@ -70,6 +71,7 @@
     <!-- / Layout wrapper -->
 
     @include('admin.inc.script')
+    @stack('script')
 </body>
 
 </html>

@@ -10,6 +10,7 @@
 
     <!-- Vendors JS -->
     <script src="{{ asset('admin') }}/vendor/libs/apex-charts/apexcharts.js"></script>
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
 
     <!-- Main JS -->
     <script src="{{ asset('admin') }}/js/main.js"></script>

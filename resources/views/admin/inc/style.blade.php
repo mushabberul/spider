@@ -18,8 +18,8 @@
 
 <!-- Vendors CSS -->
 <link rel="stylesheet" href="{{ asset('admin') }}/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
-
 <link rel="stylesheet" href="{{ asset('admin') }}/vendor/libs/apex-charts/apex-charts.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css" />
 
 <!-- Main CSS -->
 <link rel="stylesheet" href="{{ asset('admin/css/main.css') }}" />
