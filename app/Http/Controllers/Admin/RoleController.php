@@ -8,6 +8,8 @@ use Illuminate\Http\Request;
 use Flasher\Prime\FlasherInterface;
 use App\Http\Controllers\Controller;
 use App\Models\Module;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\Validator;
 
 class RoleController extends Controller
@@ -17,6 +19,8 @@ class RoleController extends Controller
      */
     public function index()
     {
+
+
         $roles = Role::with('permissions')->latest()->get();
         return view('admin.role.index', compact('roles'));
     }

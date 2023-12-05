@@ -7,6 +7,7 @@ use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use Flasher\Prime\FlasherInterface;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\Validator;
 
 class ModuleController extends Controller
@@ -16,6 +17,7 @@ class ModuleController extends Controller
      */
     public function index()
     {
+        dd(Gate::authorize('module-index'));
         $modules = Module::latest()->get();
         return view('admin.module.index', compact('modules'));
     }
